@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              red: "hsl(0, 78%, 62%)",
+              cyan: "hsl(180, 62%, 55%)",
+              orange: "hsl(34, 97%, 64%)",
+              blue: "hsl(212, 86%, 64%)",
+              veryDarkBlue: "hsl(234, 12%, 34%)",
+              grayishBlue: "hsl(229, 6%, 66%)",
+              veryLightGray: "hsl(0, 0%, 98%)",
+            },
+            fontFamily: {
+              poppins: ["Poppins"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="font-poppins">
+    <header
+      class="mx-auto mt-[85px] sm:mt-[80px] min-w-[311px] max-w-[540px] text-veryDarkBlue text-center"
+    >
+      <h1 class="text-[24px] sm:text-[36px] font-extralight">
+        Reliable, efficient delivery
+      </h1>
+      <h2 class="text-[24px] sm:text-[36px] font-semibold mt-[1px]">
+        Powered by Technology
+      </h2>
+      <p class="text-[15px] font-normal leading-[25px] mt-[16px] opacity-50">
+        Our Artificial Intelligence powered tools use millions of project data
+        points to ensure that your project is successful
+      </p>
+    </header>
+    <main
+      class="mt-[52px] sm:mt-[64px] mb-[78px] sm:mb-[60px] font-poppins text-veryDarkBlue sm:flex sm:justify-center sm:items-center sm:gap-[30px]"
+    >
+      <section class="content-begin box-border">
+        <article
+          class="mt-[24px] sm:mt-0 w-[311px] h-[222px] sm:w-[350px] sm:h-[250px] mx-auto box-border rounded-[8px] shadow-[0px_15px_30px_-11px_#83A6D280] p-[27px] sm:p-[32px] flex flex-col items-end text-left relative"
+        >
+          <div
+            class="absolute w-full top-0 left-0 h-[3.55px] sm:h-[4px] bg-cyan rounded-t-[8px]"
+          ></div>
+          <h3 class="w-full text-[20px] font-semibold">Supervisor</h3>
+          <p class="w-full text-[13px] leading-[23px] mt-[1px] opacity-50">
+            Monitors activity to identify project roadblocks
+          </p>
+          <img
+            src="./images/icon-supervisor.svg"
+            alt="supervisor icon"
+            class="w-[57px] h-[57px] sm:w-[64px] sm:h-[64px] mt-[33px]"
+          />
+        </article>
+      </section>
+      <section class="content-center box-border">
+        <article
+          class="mt-[24px] sm:mt-0 w-[311px] h-[222px] sm:w-[350px] sm:h-[250px] mx-auto box-border rounded-[8px] shadow-[0px_15px_30px_-11px_#83A6D280] p-[27px] sm:p-[32px] flex flex-col items-end text-left relative"
+        >
+          <div
+            class="absolute w-full top-0 left-0 h-[3.55px] sm:h-[4px] bg-red rounded-t-[8px]"
+          ></div>
+          <h3 class="w-full text-[20px] font-semibold">Team Builder</h3>
+          <p class="w-full text-[13px] leading-[23px] mt-[1px] opacity-50">
+            Scans our talent network to create the optimal team for your project
+          </p>
+          <img
+            src="./images/icon-team-builder.svg"
+            alt="team builder icon"
+            class="w-[57px] h-[57px] sm:w-[64px] sm:h-[64px] mt-[33px]"
+          />
+        </article>
+        <article
+          class="mt-[24px] sm:mt-[30px] w-[311px] h-[222px] sm:w-[350px] sm:h-[250px] mx-auto box-border rounded-[8px] shadow-[0px_15px_30px_-11px_#83A6D280] p-[27px] sm:p-[32px] flex flex-col items-end text-left relative"
+        >
+          <div
+            class="absolute w-full top-0 left-0 h-[3.55px] sm:h-[4px] bg-orange rounded-t-[8px]"
+          ></div>
+          <h3 class="w-full text-[20px] font-semibold">Karma</h3>
+          <p class="w-full text-[13px] leading-[23px] mt-[1px] opacity-50">
+            Regularly evaluates our talent to ensure quality
+          </p>
+          <img
+            src="./images/icon-karma.svg"
+            alt="karma icon"
+            class="w-[57px] h-[57px] sm:w-[64px] sm:h-[64px] mt-[33px]"
+          />
+        </article>
+      </section>
+      <section class="content-end box-border">
+        <article
+          class="mt-[24px] sm:mt-0 w-[311px] h-[222px] sm:w-[350px] sm:h-[250px] mx-auto box-border rounded-[8px] shadow-[0px_15px_30px_-11px_#83A6D280] p-[27px] sm:p-[32px] flex flex-col items-end text-left relative"
+        >
+          <div
+            class="absolute w-full top-0 left-0 h-[3.55px] sm:h-[4px] bg-blue rounded-t-[8px]"
+          ></div>
+          <h3 class="w-full text-[20px] font-semibold">Calculator</h3>
+          <p class="w-full text-[13px] leading-[23px] mt-[1px] opacity-50">
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <img
+            src="./images/icon-calculator.svg"
+            alt="calculator icon"
+            class="w-[57px] h-[57px] sm:w-[64px] sm:h-[64px] mt-[33px]"
+          />
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
+</html>
